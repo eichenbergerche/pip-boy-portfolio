@@ -1,0 +1,50 @@
+/*
+ * crt-effect.css
+ * Efecto CRT aplicado SOLO sobre .pipboy-screen
+ * No afecta el dial ni los controles inferiores
+ */
+
+/* ── Líneas de escaneo — solo dentro de la pantalla ── */
+.crt-on .pipboy-screen::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.22) 0px,
+    rgba(0, 0, 0, 0.22) 2px,
+    transparent 2px,
+    transparent 4px
+  );
+  pointer-events: none;
+  z-index: 999;
+  animation: scanlines 8s linear infinite;
+  border-radius: inherit;
+}
+
+@keyframes scanlines {
+  0%   { background-position: 0 0; }
+  100% { background-position: 0 100px; }
+}
+
+/* ── Curvatura + viñeta + glow ── */
+.crt-on .pipboy-screen {
+  animation: flicker 0.25s infinite;
+  border-radius: 18px;
+  box-shadow:
+    0 0 0 4px #111,
+    0 0 40px var(--hud-glow-strong),
+    inset 0 0 100px rgba(0, 0, 0, 0.7),
+    0 0 120px var(--hud-glow);
+}
+
+/* ── Parpadeo de fósforo ── */
+@keyframes flicker {
+  0%   { opacity: 1; }
+  92%  { opacity: 1; }
+  93%  { opacity: 0.88; }
+  94%  { opacity: 1; }
+  98%  { opacity: 1; }
+  99%  { opacity: 0.93; }
+  100% { opacity: 1; }
+}

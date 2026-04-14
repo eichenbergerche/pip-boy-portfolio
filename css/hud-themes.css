@@ -1,0 +1,70 @@
+/*
+ * hud-themes.css
+ * Paletas de color del HUD — cada tema sobreescribe las variables del :root
+ * Para agregar un tema nuevo: copia un bloque y cambia el selector data-theme
+ * y los valores de color.
+ */
+
+/* ── TEMA DEFAULT: Verde Pip-Boy ── */
+:root {
+  --hud-primary:     #4cff91;
+  --hud-secondary:   #2adf70;
+  --hud-dim:         #1a7040;
+  --hud-glow:        rgba(76, 255, 145, 0.35);
+  --hud-glow-strong: rgba(76, 255, 145, 0.7);
+  --hud-bg:          #020f06;
+  --hud-panel:       #030e05;
+  --hud-border:      #1d6635;
+
+  --font-mono: 'Monofonto', monospace;
+  --font-vt:   'Monofonto', monospace;
+  --transition: 0.25s ease;
+}
+
+/* ── TEMA: Ámbar Nuka ── */
+:root[data-theme="amber"] {
+  --hud-primary:     #ffb347;
+  --hud-secondary:   #e09030;
+  --hud-dim:         #7a4800;
+  --hud-glow:        rgba(255, 179, 71, 0.35);
+  --hud-glow-strong: rgba(255, 179, 71, 0.7);
+  --hud-bg:          #0f0800;
+  --hud-panel:       #0a0500;
+  --hud-border:      #7a4800;
+}
+
+/* ── TEMA: Azul Institute ── */
+:root[data-theme="blue"] {
+  --hud-primary:     #4db8ff;
+  --hud-secondary:   #2090e0;
+  --hud-dim:         #0a3d6b;
+  --hud-glow:        rgba(77, 184, 255, 0.35);
+  --hud-glow-strong: rgba(77, 184, 255, 0.7);
+  --hud-bg:          #00060f;
+  --hud-panel:       #00040b;
+  --hud-border:      #0a3d6b;
+}
+
+/* ── TEMA: Rojo Peligro ── */
+:root[data-theme="red"] {
+  --hud-primary:     #ff4d4d;
+  --hud-secondary:   #cc2222;
+  --hud-dim:         #5c0000;
+  --hud-glow:        rgba(255, 77, 77, 0.35);
+  --hud-glow-strong: rgba(255, 77, 77, 0.7);
+  --hud-bg:          #0f0000;
+  --hud-panel:       #080000;
+  --hud-border:      #5c0000;
+}
+
+/* ── TEMA: Blanco Ghost ── */
+:root[data-theme="white"] {
+  --hud-primary:     #e8e8d0;
+  --hud-secondary:   #c0c0a0;
+  --hud-dim:         #505040;
+  --hud-glow:        rgba(232, 232, 208, 0.2);
+  --hud-glow-strong: rgba(232, 232, 208, 0.5);
+  --hud-bg:          #080808;
+  --hud-panel:       #050505;
+  --hud-border:      #404030;
+}

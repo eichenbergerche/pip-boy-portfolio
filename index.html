@@ -1,0 +1,1166 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>PIP-BOY 3000 | Charles Henry Eichenberger</title>
+
+    <!-- SEO básico -->
+    <meta
+      name="description"
+      content="Portfolio de Charles Henry Eichenberger — Diseñador UX/UI y Desarrollador Web en Dionisio Cerqueira, Santa Catarina, Brasil"
+    />
+    <meta name="author" content="Charles Henry Eichenberger" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="PIP-BOY 3000 | Charles Henry Eichenberger"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio de diseño UX/UI y desarrollo web estilo Fallout"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Favicons completos - COPIA TODO ESTO -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/images/favicon/favicon.ico"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon/favicon-32x32.png"
+    />
+
+    <!-- Android Chrome -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/images/favicon/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="assets/images/favicon/android-chrome-512x512.png"
+    />
+
+    <!-- Apple/iOS -->
+    <link
+      rel="apple-touch-icon"
+      href="assets/images/favicon/apple-touch-icon.png"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="css/hud-themes.css" />
+    <link rel="stylesheet" href="css/pipboy.css" />
+    <link rel="stylesheet" href="css/crt-effect.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body class="crt-on">
+    <!-- Pantalla de BOOT -->
+    <div
+      class="boot-screen"
+      id="bootScreen"
+      aria-label="Pantalla de inicio Pip-Boy"
+    >
+      <pre class="boot-text" id="bootText"></pre>
+    </div>
+
+    <!-- WRAPPER PRINCIPAL -->
+    <div class="pipboy-wrapper" id="pipboyWrapper">
+      <div class="pipboy-body">
+        <!-- PANTALLA -->
+        <div class="pipboy-screen" id="pipboyScreen">
+          <!-- Pantalla apagada -->
+          <div class="off-screen" id="offScreen">
+            <span class="off-text">PIP-BOY 3000 OFF</span>
+          </div>
+
+          <!-- Barra de pestañas (SIN iconos) -->
+          <nav
+            class="tab-bar"
+            role="tablist"
+            aria-label="Secciones del Pip-Boy"
+          >
+            <button
+              class="tab-btn active"
+              data-tab="stat"
+              role="tab"
+              aria-selected="true"
+            >
+              STAT
+            </button>
+            <button
+              class="tab-btn"
+              data-tab="inv"
+              role="tab"
+              aria-selected="false"
+            >
+              INV
+            </button>
+            <button
+              class="tab-btn"
+              data-tab="data"
+              role="tab"
+              aria-selected="false"
+            >
+              DATA
+            </button>
+            <button
+              class="tab-btn"
+              data-tab="map"
+              role="tab"
+              aria-selected="false"
+            >
+              MAP
+            </button>
+            <button
+              class="tab-btn"
+              data-tab="radio"
+              role="tab"
+              aria-selected="false"
+            >
+              RADIO
+            </button>
+          </nav>
+
+          <!-- Área de contenido -->
+          <div class="screen-content" role="tabpanel">
+            <!-- ==========================================
+               SECCIÓN STAT
+          =========================================== -->
+            <section
+              class="pip-section active"
+              id="section-stat"
+              aria-label="Estadísticas"
+            >
+              <h2 class="section-title" data-i18n="stat_title">
+                VAULT DWELLER // SOBRE MÍ
+              </h2>
+
+              <div class="stat-grid">
+                <div class="stat-avatar" aria-hidden="true">☢</div>
+                <div class="stat-info">
+                  <div class="stat-name" data-i18n="stat_name">
+                    CHARLES HENRY EICHENBERGER
+                  </div>
+                  <div class="stat-role" data-i18n="stat_role">
+                    Diseñador UX/UI · Desarrollador Web · Sistemas de Diseño
+                  </div>
+                  <p class="stat-bio" data-i18n="stat_bio">
+                    Diseñador UX/UI y Desarrollador Web con más de 4 años de
+                    experiencia en la creación de interfaces centradas en el
+                    usuario, desarrollo de sitios responsivos e implementación
+                    de Sistemas de Diseño modulares. Fuerte dominio en
+                    prototipado, wireframing, arquitectura de la información,
+                    con enfoque en accesibilidad y optimización del rendimiento.
+                  </p>
+                  <div class="stat-links mt-sm">
+                    <a
+                      class="pip-link"
+                      href="https://www.linkedin.com/in/eichenbergerche"
+                      target="_blank"
+                      rel="noopener"
+                      >LinkedIn</a
+                    >
+                    <a
+                      class="pip-link"
+                      href="https://github.com/eichenbergerche"
+                      target="_blank"
+                      rel="noopener"
+                      >GitHub</a
+                    >
+                    <a
+                      class="pip-link"
+                      href="mailto:eichenberger.che@gmail.com"
+                      target="_blank"
+                      rel="noopener"
+                      >Email</a
+                    >
+                    <a
+                      class="pip-link"
+                      id="cvLink"
+                      href="#"
+                      download
+                      data-i18n="download_cv"
+                      data-cv-es="assets/curriculums/charlesHenryEichenbergerCV-esp.pdf"
+                      data-cv-en="assets/curriculums/charlesHenryEichenbergerCV-eng.pdf"
+                      data-cv-pt="assets/curriculums/charlesHenryEichenbergerCV-pt.pdf"
+                    >
+                      [ DESCARGAR CV ]
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills-label mt-md" data-i18n="skills_title">
+                // S.P.E.C.I.A.L. SKILLS
+              </div>
+              <div class="skill-inventory">
+                <div class="skill-category">
+                  <div class="skill-category-title">
+                    <span class="skill-cat-icon">◈</span>
+                    <span data-i18n="skill_cat_ux">UX / UI DESIGN</span>
+                  </div>
+                  <div class="skill-tags">
+                    <span class="skill-tag">Figma</span>
+                    <span class="skill-tag">Framer</span>
+                    <span class="skill-tag" data-i18n="skill_prototyping"
+                      >Prototyping</span
+                    >
+                    <span class="skill-tag" data-i18n="skill_wireframing"
+                      >Wireframing</span
+                    >
+                    <span class="skill-tag" data-i18n="skill_design_systems"
+                      >Design Systems</span
+                    >
+                    <span class="skill-tag" data-i18n="skill_info_arch"
+                      >Info Architecture</span
+                    >
+                    <span class="skill-tag" data-i18n="skill_usability"
+                      >Usability Testing</span
+                    >
+                    <span class="skill-tag" data-i18n="skill_accessibility"
+                      >Accessibility</span
+                    >
+                  </div>
+                </div>
+
+                <div class="skill-category">
+                  <div class="skill-category-title">
+                    <span class="skill-cat-icon">◈</span>
+                    <span data-i18n="skill_cat_web">WEB DEVELOPMENT</span>
+                  </div>
+                  <div class="skill-tags">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">WordPress</span>
+                    <span class="skill-tag">Bootstrap</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag" data-i18n="skill_agile">Agile</span>
+                  </div>
+                </div>
+
+                <div class="skill-category">
+                  <div class="skill-category-title">
+                    <span class="skill-cat-icon">◈</span>
+                    <span data-i18n="skill_cat_graphic">GRAPHIC DESIGN</span>
+                  </div>
+                  <div class="skill-tags">
+                    <span class="skill-tag">Photoshop</span>
+                    <span class="skill-tag">Illustrator</span>
+                    <span
+                      class="skill-tag"
+                      data-i18n="skill_digital_illustration"
+                      >Digital Illustration</span
+                    >
+                    <span class="skill-tag">Adobe CC</span>
+                  </div>
+                </div>
+
+                <div class="skill-category">
+                  <div class="skill-category-title">
+                    <span class="skill-cat-icon">◈</span>
+                    <span data-i18n="skill_cat_management">MANAGEMENT</span>
+                  </div>
+                  <div class="skill-tags">
+                    <span class="skill-tag" data-i18n="skill_leadership"
+                      >Leadership</span
+                    >
+                    <span class="skill-tag" data-i18n="skill_mentorship"
+                      >Mentorship</span
+                    >
+                    <span class="skill-tag" data-i18n="skill_teamwork"
+                      >Teamwork</span
+                    >
+                    <span class="skill-tag" data-i18n="skill_strategic_planning"
+                      >Strategic Planning</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- ==========================================
+               SECCIÓN INV — Proyectos (con iconos SVG)
+          =========================================== -->
+            <section
+              class="pip-section"
+              id="section-inv"
+              aria-label="Inventario de proyectos"
+            >
+              <h2 class="section-title" data-i18n="inv_title">
+                INVENTORY // PROJECTS
+              </h2>
+              <div class="inv-list">
+                <!-- PROYECTO 1 -->
+                <div class="inv-item" data-item="1">
+                  <div class="inv-header">
+                    <svg
+                      class="inv-icon"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"
+                      />
+                    </svg>
+                    <span class="inv-name" data-i18n="project_1_name"
+                      >Klakit Design System</span
+                    >
+                    <span class="inv-tag" data-i18n="project_1_tag"
+                      >Design System</span
+                    >
+                    <span class="inv-expand">▶</span>
+                  </div>
+                  <div class="inv-detail">
+                    <div class="inv-preview">
+                      [ CAPTURA DEL PROYECTO ]<br />assets/images/klakit.jpg
+                    </div>
+                    <div class="inv-info">
+                      <p class="inv-desc" data-i18n="project_1_desc">
+                        Creación y mantenimiento de un sistema de diseño modular
+                        que incrementa la velocidad de ajustes de diseño en un
+                        20%. Consultoría estratégica para mejorar usabilidad,
+                        experiencia del usuario y accesibilidad de la plataforma
+                        Klakit. Desarrollo de temas personalizables para ampliar
+                        la personalización y el engagement.
+                      </p>
+                      <div class="inv-tech">
+                        <span class="tech-badge">Figma</span>
+                        <span class="tech-badge" data-i18n="tech_design_system"
+                          >Design System</span
+                        >
+                        <span class="tech-badge" data-i18n="tech_ux_consulting"
+                          >UX Consulting</span
+                        >
+                        <span class="tech-badge" data-i18n="tech_accessibility"
+                          >Accessibility</span
+                        >
+                      </div>
+                      <div class="inv-actions">
+                        <a
+                          class="pip-link"
+                          href="https://klak.io"
+                          target="_blank"
+                          rel="noopener"
+                          data-i18n="view_platform"
+                          >[ VER PLATAFORMA ]</a
+                        >
+                        <a
+                          class="pip-link"
+                          href="#"
+                          target="_blank"
+                          rel="noopener"
+                          data-i18n="case_study"
+                          >[ CASE STUDY ]</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="inv-separator"></div>
+
+                <!-- PROYECTO 2 -->
+                <div class="inv-item" data-item="2">
+                  <div class="inv-header">
+                    <svg
+                      class="inv-icon"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+                      />
+                    </svg>
+                    <span class="inv-name" data-i18n="project_2_name"
+                      >LMV Corporate Redesign</span
+                    >
+                    <span class="inv-tag" data-i18n="project_2_tag"
+                      >Web Development</span
+                    >
+                    <span class="inv-expand">▶</span>
+                  </div>
+                  <div class="inv-detail">
+                    <div class="inv-preview">
+                      [ CAPTURA DEL PROYECTO ]<br />assets/images/lmv-website.jpg
+                    </div>
+                    <div class="inv-info">
+                      <p class="inv-desc" data-i18n="project_2_desc">
+                        Rediseño completo del sitio corporativo, logrando 95
+                        puntos en Google Lighthouse en rendimiento,
+                        accesibilidad y SEO. Liderazgo y mentoría del equipo de
+                        diseño, promoviendo mejores prácticas y metodologías
+                        ágiles. Desarrollo de portafolios digitales que
+                        aumentaron la visibilidad de los principales productos
+                        en un 35%.
+                      </p>
+                      <div class="inv-tech">
+                        <span class="tech-badge">HTML5</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">Lighthouse 95+</span>
+                      </div>
+                      <div class="inv-actions">
+                        <a
+                          class="pip-link"
+                          href="#"
+                          target="_blank"
+                          rel="noopener"
+                          data-i18n="view_site"
+                          >[ VER SITIO ]</a
+                        >
+                        <a
+                          class="pip-link"
+                          href="#"
+                          target="_blank"
+                          rel="noopener"
+                          data-i18n="case_study"
+                          >[ CASE STUDY ]</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="inv-separator"></div>
+
+                <!-- PROYECTO 3 -->
+                <div class="inv-item" data-item="3">
+                  <div class="inv-header">
+                    <svg
+                      class="inv-icon"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"
+                      />
+                    </svg>
+                    <span class="inv-name" data-i18n="project_3_name"
+                      >Guau&Cat Responsive Sites</span
+                    >
+                    <span class="inv-tag" data-i18n="project_3_tag"
+                      >Web Development</span
+                    >
+                    <span class="inv-expand">▶</span>
+                  </div>
+                  <div class="inv-detail">
+                    <div class="inv-preview">
+                      [ CAPTURA DEL PROYECTO ]<br />assets/images/gau-cat.jpg
+                    </div>
+                    <div class="inv-info">
+                      <p class="inv-desc" data-i18n="project_3_desc">
+                        Desarrollo de sitios responsivos basados en prototipos y
+                        especificaciones de Figma, asegurando alta fidelidad
+                        visual y excelente experiencia de usuario (UX).
+                        Implementación de microinteracciones y funcionalidades
+                        interactivas utilizando HTML, CSS y JavaScript, centrado
+                        en la usabilidad y el rendimiento.
+                      </p>
+                      <div class="inv-tech">
+                        <span class="tech-badge">Figma</span>
+                        <span class="tech-badge">HTML5</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">JavaScript</span>
+                      </div>
+                      <div class="inv-actions">
+                        <a
+                          class="pip-link"
+                          href="#"
+                          target="_blank"
+                          rel="noopener"
+                          data-i18n="view_project"
+                          >[ VER PROYECTO ]</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="inv-separator"></div>
+
+                <!-- PROYECTO 4 -->
+                <div class="inv-item" data-item="4">
+                  <div class="inv-header">
+                    <svg
+                      class="inv-icon"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12zm3-4C8.67 8 8 7.33 8 6.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 9 17.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"
+                      />
+                    </svg>
+                    <span class="inv-name" data-i18n="project_4_name"
+                      >EicheStudio Freelance Projects</span
+                    >
+                    <span class="inv-tag" data-i18n="project_4_tag"
+                      >Freelance</span
+                    >
+                    <span class="inv-expand">▶</span>
+                  </div>
+                  <div class="inv-detail">
+                    <div class="inv-preview">
+                      [ CAPTURA DEL PROYECTO ]<br />assets/images/eichestudio.jpg
+                    </div>
+                    <div class="inv-info">
+                      <p class="inv-desc" data-i18n="project_4_desc">
+                        Diseños centrados en el usuario, enfocándome en
+                        wireframing, prototipado y arquitectura de la
+                        información. Desarrollo de sitios responsivos utilizando
+                        Framer, WordPress, HTML, CSS y Bootstrap. Ilustraciones
+                        personalizadas y contenidos visuales para campañas y
+                        proyectos diversos.
+                      </p>
+                      <div class="inv-tech">
+                        <span class="tech-badge">Framer</span>
+                        <span class="tech-badge">WordPress</span>
+                        <span class="tech-badge">Illustrator</span>
+                        <span class="tech-badge">UX/UI</span>
+                      </div>
+                      <div class="inv-actions">
+                        <a
+                          class="pip-link"
+                          href="https://github.com/eichenbergerche"
+                          target="_blank"
+                          rel="noopener"
+                          data-i18n="view_portfolio"
+                          >[ VER PORTFOLIO ]</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- ==========================================
+               SECCIÓN DATA
+          =========================================== -->
+            <section
+              class="pip-section"
+              id="section-data"
+              aria-label="Datos de experiencia"
+            >
+              <h2 class="section-title" data-i18n="data_title">
+                DATA // EXPERIENCE
+              </h2>
+              <div class="data-log">
+                <!-- EXPERIENCIA 1 -->
+                <div class="log-entry">
+                  <div class="log-date">SEP 2024<br />–<br />HOY</div>
+                  <div class="log-dot" aria-hidden="true"></div>
+                  <div class="log-body">
+                    <div class="log-title" data-i18n="exp_1_title">
+                      Asesor UX (Herramienta Klakit)
+                    </div>
+                    <div class="log-place" data-i18n="exp_1_place">
+                      Klak · Remoto
+                    </div>
+                    <p class="log-desc" data-i18n="exp_1_desc">
+                      Creación y mantenimiento de un sistema de diseño modular
+                      que incrementa la velocidad de ajustes de diseño en un
+                      20%. Consultoría estratégica para mejorar usabilidad,
+                      experiencia del usuario y accesibilidad. Desarrollo de
+                      temas personalizables para ampliar la personalización y el
+                      engagement de los usuarios.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- EXPERIENCIA 2 -->
+                <div class="log-entry">
+                  <div class="log-date">FEB 2025<br />–<br />SEP 2025</div>
+                  <div class="log-dot" aria-hidden="true"></div>
+                  <div class="log-body">
+                    <div class="log-title" data-i18n="exp_2_title">
+                      Desarrollador Web
+                    </div>
+                    <div class="log-place" data-i18n="exp_2_place">
+                      Guau&Cat · Remoto
+                    </div>
+                    <p class="log-desc" data-i18n="exp_2_desc">
+                      Desarrollo de sitios responsivos basados en prototipos y
+                      especificaciones de Figma, asegurando alta fidelidad
+                      visual y excelente UX. Implementación de
+                      microinteracciones y funcionalidades interactivas
+                      utilizando HTML, CSS y JavaScript.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- EXPERIENCIA 3 -->
+                <div class="log-entry">
+                  <div class="log-date">AGO 2021<br />–<br />ENE 2024</div>
+                  <div class="log-dot" aria-hidden="true"></div>
+                  <div class="log-body">
+                    <div class="log-title" data-i18n="exp_3_title">
+                      Diseñador UX/UI y Desarrollador Web
+                    </div>
+                    <div class="log-place" data-i18n="exp_3_place">
+                      LMV Software Factory · Remoto
+                    </div>
+                    <p class="log-desc" data-i18n="exp_3_desc">
+                      Rediseño del sitio corporativo, logrando 95 puntos en
+                      Google Lighthouse en rendimiento, accesibilidad y SEO.
+                      Liderazgo y mentoría del equipo de diseño, promoviendo
+                      mejores prácticas y metodologías ágiles. Desarrollo de
+                      portafolios digitales que aumentaron la visibilidad de los
+                      principales productos en un 35%.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- EXPERIENCIA 4 -->
+                <div class="log-entry">
+                  <div class="log-date">MAR 2021<br />–<br />AGO 2021</div>
+                  <div class="log-dot" aria-hidden="true"></div>
+                  <div class="log-body">
+                    <div class="log-title" data-i18n="exp_4_title">
+                      Desarrollador Web y Diseñador UI
+                    </div>
+                    <div class="log-place" data-i18n="exp_4_place">
+                      Envolvedoras y Servicios SRL · Remoto
+                    </div>
+                    <p class="log-desc" data-i18n="exp_4_desc">
+                      Implementación de funcionalidades personalizadas que
+                      aumentaron la interacción de usuarios en un 25%.
+                      Optimización de la performance del sitio, reduciendo los
+                      tiempos de carga en un 30%. Gestión de proyectos web
+                      completos, desde la planificación hasta la entrega.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- EXPERIENCIA 5 -->
+                <div class="log-entry">
+                  <div class="log-date">MAR 2020<br />–<br />HOY</div>
+                  <div class="log-dot" aria-hidden="true"></div>
+                  <div class="log-body">
+                    <div class="log-title" data-i18n="exp_5_title">
+                      Freelance — Desarrollador, Ilustrador y Diseñador
+                    </div>
+                    <div class="log-place" data-i18n="exp_5_place">
+                      EicheStudio · Remoto
+                    </div>
+                    <p class="log-desc" data-i18n="exp_5_desc">
+                      Diseños centrados en el usuario, enfocándome en
+                      wireframing, prototipado y arquitectura de la información.
+                      Desarrollo de sitios responsivos utilizando Framer,
+                      WordPress, HTML, CSS y Bootstrap. Ilustraciones
+                      personalizadas y consultoría UX/UI para optimizar la
+                      experiencia digital.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- EDUCACIÓN -->
+                <div class="log-entry">
+                  <div class="log-date">MAR 2020<br />–<br />DIC 2022</div>
+                  <div class="log-dot" aria-hidden="true"></div>
+                  <div class="log-body">
+                    <div class="log-title" data-i18n="edu_1_title">
+                      Técnico Superior en Desarrollo de Software
+                    </div>
+                    <div class="log-place" data-i18n="edu_1_place">
+                      Instituto de Educación Superior "Carmen Molina de Llano" ·
+                      Corrientes, Argentina
+                    </div>
+                    <p class="log-desc" data-i18n="edu_1_desc">
+                      Formación técnica superior con enfoque en desarrollo de
+                      software, programación y tecnologías web.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- ==========================================
+               SECCIÓN MAP — Contacto (con iconos SVG)
+          =========================================== -->
+            <section class="pip-section" id="section-map" aria-label="Contacto">
+              <h2 class="section-title" data-i18n="map_title">
+                MAP // CONTACT
+              </h2>
+              <div class="map-grid">
+                <!-- Formulario -->
+                <div class="terminal-form">
+                  <div class="form-field">
+                    <label
+                      class="form-label"
+                      for="contact-name"
+                      data-i18n="contact_name"
+                      >Nombre</label
+                    >
+                    <input
+                      class="form-input"
+                      type="text"
+                      id="contact-name"
+                      name="name"
+                      autocomplete="name"
+                      placeholder="Tu nombre"
+                    />
+                  </div>
+                  <div class="form-field">
+                    <label
+                      class="form-label"
+                      for="contact-email"
+                      data-i18n="contact_email"
+                      >Email</label
+                    >
+                    <input
+                      class="form-input"
+                      type="email"
+                      id="contact-email"
+                      name="email"
+                      autocomplete="email"
+                      placeholder="tu@email.com"
+                    />
+                  </div>
+                  <div class="form-field">
+                    <label
+                      class="form-label"
+                      for="contact-msg"
+                      data-i18n="contact_msg"
+                      >Mensaje</label
+                    >
+                    <textarea
+                      class="form-textarea"
+                      id="contact-msg"
+                      name="message"
+                      rows="4"
+                      placeholder="Cuéntame sobre tu proyecto..."
+                    ></textarea>
+                  </div>
+                  <button
+                    class="pip-link form-submit"
+                    type="button"
+                    id="sendMsg"
+                    data-i18n="send_msg"
+                  >
+                    [ TRANSMITIR MENSAJE ]
+                  </button>
+                  <div
+                    id="formFeedback"
+                    style="
+                      font-size: 0.65rem;
+                      color: var(--hud-secondary);
+                      display: none;
+                    "
+                  ></div>
+                </div>
+
+                <!-- Datos de contacto -->
+                <div class="contact-info">
+                  <div class="contact-row">
+                    <svg
+                      class="contact-icon"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                      />
+                    </svg>
+                    <div class="contact-detail">
+                      <span class="contact-key" data-i18n="email_label"
+                        >Email</span
+                      >
+                      <a
+                        class="contact-val pip-glow"
+                        href="mailto:eichenberger.che@gmail.com"
+                        style="text-decoration: none; color: inherit"
+                      >
+                        eichenberger.che@gmail.com
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="contact-row">
+                    <svg
+                      class="contact-icon"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                      />
+                    </svg>
+                    <div class="contact-detail">
+                      <span class="contact-key" data-i18n="whatsapp_label"
+                        >WhatsApp</span
+                      >
+                      <a
+                        class="contact-val pip-glow"
+                        href="https://wa.me/5549935052267?text=Hi%20Charles!%20I%20saw%20your%20CV%20and%20I%E2%80%99d%20love%20to%20talk%20about%20opportunities%20with%20you."
+                        target="_blank"
+                        rel="noopener"
+                        style="text-decoration: none; color: inherit"
+                      >
+                        +55 49 93505-2267
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="contact-row">
+                    <svg
+                      class="contact-icon"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                      />
+                    </svg>
+                    <div class="contact-detail">
+                      <span class="contact-key" data-i18n="location_label"
+                        >Ubicación</span
+                      >
+                      <span class="contact-val"
+                        >Dionísio Cerqueira, Santa Catarina — BR</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="contact-row">
+                    <svg
+                      class="contact-icon"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4z"
+                      />
+                    </svg>
+                    <div class="contact-detail">
+                      <span class="contact-key" data-i18n="availability_label"
+                        >Disponibilidad</span
+                      >
+                      <span
+                        class="contact-val"
+                        style="color: #4cff91"
+                        data-i18n="open_to_work"
+                        >[ OPEN TO WORK ]</span
+                      >
+                    </div>
+                  </div>
+
+                  <!-- Mapa de ubicación estilo Pip-Boy -->
+                  <div class="pip-map-wrapper">
+                    <div class="pip-map-scanlines" aria-hidden="true"></div>
+                    <div class="pip-map-overlay" aria-hidden="true">
+                      <span class="pip-map-label">◈ UBICACIÓN DETECTADA ◈</span>
+                      <span class="pip-map-coords">-26.9197° / -53.6326°</span>
+                    </div>
+                    <iframe
+                      class="pip-map-frame"
+                      src="https://maps.google.com/maps?q=-26.2631,-53.6296&z=14&t=h&output=embed"
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- ==========================================
+               SECCIÓN RADIO
+          =========================================== -->
+            <section
+              class="pip-section"
+              id="section-radio"
+              aria-label="Configuración"
+            >
+              <h2 class="section-title" data-i18n="radio_title">
+                RADIO // HUD SETTINGS
+              </h2>
+              <div class="settings-grid">
+                <!-- Selector de color -->
+                <div class="settings-block">
+                  <div class="settings-subtitle" data-i18n="hud_color_theme">
+                    // HUD COLOR THEME
+                  </div>
+                  <div class="color-options" id="colorOptions">
+                    <div class="color-opt active" data-theme="green">
+                      <span class="color-swatch swatch-green"></span>
+                      <span class="color-label" data-i18n="theme_vault_green"
+                        >VAULT GREEN (default)</span
+                      >
+                    </div>
+                    <div class="color-opt" data-theme="amber">
+                      <span class="color-swatch swatch-amber"></span>
+                      <span class="color-label" data-i18n="theme_nuka_amber"
+                        >NUKA AMBER</span
+                      >
+                    </div>
+                    <div class="color-opt" data-theme="blue">
+                      <span class="color-swatch swatch-blue"></span>
+                      <span class="color-label" data-i18n="theme_institute_blue"
+                        >INSTITUTE BLUE</span
+                      >
+                    </div>
+                    <div class="color-opt" data-theme="red">
+                      <span class="color-swatch swatch-red"></span>
+                      <span class="color-label" data-i18n="theme_danger_red"
+                        >DANGER RED</span
+                      >
+                    </div>
+                    <div class="color-opt" data-theme="white">
+                      <span class="color-swatch swatch-white"></span>
+                      <span class="color-label" data-i18n="theme_ghost_white"
+                        >GHOST WHITE</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Efectos de pantalla -->
+                <div class="settings-block">
+                  <div class="settings-subtitle" data-i18n="display_effects">
+                    // DISPLAY EFFECTS
+                  </div>
+                  <div class="crt-toggle-wrap">
+                    <p class="crt-desc" data-i18n="crt_desc">
+                      Activá o desactivá los efectos de pantalla CRT: líneas de
+                      escaneo, vignette y parpadeo de fósforo.
+                    </p>
+                    <div
+                      class="toggle-row"
+                      id="crtToggle"
+                      role="switch"
+                      aria-checked="true"
+                      tabindex="0"
+                    >
+                      <div class="pip-toggle on" id="crtToggleKnob"></div>
+                      <span class="toggle-label" data-i18n="crt_scanline"
+                        >CRT SCANLINE EFFECT</span
+                      >
+                    </div>
+                    <div
+                      class="toggle-row"
+                      id="glowToggle"
+                      role="switch"
+                      aria-checked="true"
+                      tabindex="0"
+                    >
+                      <div class="pip-toggle on" id="glowToggleKnob"></div>
+                      <span class="toggle-label" data-i18n="phosphor_glow"
+                        >PHOSPHOR GLOW</span
+                      >
+                    </div>
+                  </div>
+
+                  <!-- Preview -->
+                  <div class="settings-preview mt-md">
+                    <div class="preview-label" data-i18n="live_preview">
+                      // LIVE PREVIEW
+                    </div>
+                    <div class="preview-bar-row">
+                      <div class="preview-dot"></div>
+                      <div class="preview-bar" style="width: 70%"></div>
+                    </div>
+                    <div class="preview-bar-row">
+                      <div class="preview-dot"></div>
+                      <div class="preview-bar" style="width: 45%"></div>
+                    </div>
+                    <div class="preview-bar-row">
+                      <div class="preview-dot"></div>
+                      <div class="preview-bar" style="width: 88%"></div>
+                    </div>
+                    <div class="preview-text mt-sm" data-i18n="pipboy_name">
+                      PIP-BOY 3000
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- /screen-content -->
+
+          <!-- Barra de estado inferior -->
+          <div class="status-bar" aria-hidden="true">
+            <span id="statusLeft">SYS: NOMINAL</span>
+            <div class="status-ticker" role="marquee">
+              <span class="ticker-inner">
+                <span class="ticker-content">
+                  ◈ PIP-BOY 3000 MKIII — ROBCO INDUSTRIES ◈ CHARLES HENRY
+                  EICHENBERGER ◈ UX/UI DESIGNER & WEB DEVELOPER ◈ 4+ AÑOS DE
+                  EXPERIENCIA ◈ DISPONIBLE PARA PROYECTOS ◈ SEÑAL: ESTABLE ◈
+                  BATERÍA: 100% ◈
+                </span>
+
+                <!-- DUPLICADO -->
+                <span class="ticker-content">
+                  ◈ PIP-BOY 3000 MKIII — ROBCO INDUSTRIES ◈ CHARLES HENRY
+                  EICHENBERGER ◈ UX/UI DESIGNER & WEB DEVELOPER ◈ 4+ AÑOS DE
+                  EXPERIENCIA ◈ DISPONIBLE PARA PROYECTOS ◈ SEÑAL: ESTABLE ◈
+                  BATERÍA: 100% ◈
+                </span>
+              </span>
+            </div>
+            <span id="statusRight" aria-live="polite">00:00:00</span>
+          </div>
+        </div>
+        <!-- /pipboy-screen -->
+
+        <!-- CONTROLES INFERIORES -->
+        <div class="pipboy-controls">
+          <div class="active-tab-display" aria-live="polite">
+            TAB: <span id="activeTabLabel">STAT</span>
+          </div>
+
+          <div class="dial-container">
+            <span class="dial-hint">← girar →</span>
+            <div class="dial-crown" aria-hidden="true">
+              <div
+                class="dial"
+                id="navDial"
+                role="slider"
+                aria-label="Dial de navegación"
+                aria-valuemin="0"
+                aria-valuemax="4"
+                aria-valuenow="0"
+                tabindex="0"
+              >
+                <div class="dial-marker"></div>
+              </div>
+            </div>
+            <div class="dial-leds" aria-hidden="true">
+              <div class="dial-led lit" id="led0"></div>
+              <div class="dial-led" id="led1"></div>
+              <div class="dial-led" id="led2"></div>
+              <div class="dial-led" id="led3"></div>
+              <div class="dial-led" id="led4"></div>
+            </div>
+          </div>
+          <div class="btn-group">
+            <div class="pipboy-btns">
+              <!-- Botón Anterior -->
+              <button
+                class="pip-btn nav-btn"
+                id="prevTabBtn"
+                aria-label="Pestaña anterior"
+                title="Anterior"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                </svg>
+              </button>
+
+              <!-- Botón Siguiente -->
+              <button
+                class="pip-btn nav-btn"
+                id="nextTabBtn"
+                aria-label="Siguiente pestaña"
+                title="Siguiente"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                </svg>
+              </button>
+
+              <!-- Botón Power -->
+              <button
+                class="pip-btn power-btn"
+                id="powerBtn"
+                aria-label="Encender/apagar"
+                title="Power"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M13 3h-2v10h2V3zm4.83 2.17l-1.42 1.42C17.99 7.86 19 9.81 19 12c0 3.87-3.13 7-7 7s-7-3.13-7-7c0-2.19 1.01-4.14 2.58-5.42L6.17 5.17C4.23 6.82 3 9.26 3 12c0 4.97 4.03 9 9 9s9-4.03 9-9c0-2.74-1.23-5.18-3.17-6.83z"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <!-- SELECTOR DE IDIOMA (abajo de los botones) -->
+            <div class="language-selector">
+              <button class="lang-btn active" data-lang="es" title="Español">
+                ES
+              </button>
+              <button class="lang-btn" data-lang="en" title="English">
+                EN
+              </button>
+              <button class="lang-btn" data-lang="pt" title="Português">
+                PT
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /pipboy-body -->
+    </div>
+    <!-- /pipboy-wrapper -->
+    <!-- SCRIPTS -->
+    <script src="js/sound.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/dial.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/i18n.js"></script>
+  </body>
+</html>

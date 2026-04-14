@@ -1,0 +1,103 @@
+/*
+ * responsive.css
+ * Media queries para adaptar el Pip-Boy a distintos tamaños de pantalla.
+ * Breakpoints:
+ *   ≤ 680px  → tablet / mobile grande
+ *   ≤ 400px  → mobile pequeño
+ */
+
+/* ── Tablet / Mobile grande ── */
+@media (max-width: 680px) {
+  .pipboy-wrapper {
+    width: 100vw;
+  }
+
+  .pipboy-body {
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    padding: 10px;
+  }
+
+  .tab-btn {
+    font-size: 1.1rem;
+    padding: 8px 2px 6px;
+  }
+
+  /* Altura de pantalla adaptada */
+  .screen-content {
+    padding: 14px;
+    height: calc(100vh - 300px);
+    min-height: 380px;
+    max-height: 600px;
+  }
+
+  /* STAT: avatar arriba, info abajo */
+  .stat-grid {
+    grid-template-columns: 1fr;
+  }
+  .stat-avatar {
+    width: 80px;
+    height: 96px;
+    font-size: 3.2rem;
+  }
+
+  /* Barras de skill: etiqueta más corta */
+  .skill-row {
+    grid-template-columns: 90px 1fr 34px;
+  }
+
+  /* INV: detalle en columna única */
+  .inv-detail {
+    grid-template-columns: 1fr;
+  }
+
+  /* MAP: formulario y contacto en columna */
+  .map-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  /* RADIO: settings en columna */
+  .settings-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Dial más pequeño */
+  .dial-crown {
+    width: 72px;
+    height: 72px;
+  }
+  .dial {
+    width: 56px;
+    height: 56px;
+  }
+
+  /* Ocultar etiqueta de tab activo (falta espacio) */
+  .active-tab-display {
+    display: none;
+  }
+
+  .pipboy-btns {
+    min-width: unset;
+  }
+
+  /* Ocultar mapa ASCII decorativo */
+  .ascii-map {
+    display: none;
+  }
+}
+
+/* ── Mobile pequeño ── */
+@media (max-width: 400px) {
+  .tab-btn {
+    font-size: 0.9rem;
+    letter-spacing: 0;
+  }
+
+  .screen-content {
+    height: calc(100vh - 320px);
+    min-height: 300px;
+    max-height: 480px;
+  }
+}
