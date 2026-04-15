@@ -138,7 +138,7 @@
               role="tab"
               aria-selected="false"
             >
-              RADIO
+              HUD
             </button>
           </nav>
 
@@ -211,10 +211,60 @@
                 </div>
               </div>
 
+              <!-- Etiqueta de título (igual) -->
               <div class="skills-label mt-md" data-i18n="skills_title">
                 // S.P.E.C.I.A.L. SKILLS
               </div>
-              <div class="skill-inventory">
+              <!-- Vista 1: Barras S.P.E.C.I.A.L. -->
+              <div class="skill-bars" id="skillBarsView" style="display: none">
+                <!-- EDITAR: cambia data-value (0-100) y el label -->
+                <div class="skill-row">
+                  <span class="skill-row-label">UI Design</span>
+                  <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-value="90"></div>
+                  </div>
+                  <span class="skill-val">90</span>
+                </div>
+                <div class="skill-row">
+                  <span class="skill-row-label">UX Research</span>
+                  <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-value="80"></div>
+                  </div>
+                  <span class="skill-val">80</span>
+                </div>
+
+                <div class="skill-row">
+                  <span class="skill-row-label">Figma / Sketch</span>
+                  <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-value="92"></div>
+                  </div>
+                  <span class="skill-val">92</span>
+                </div>
+                <div class="skill-row">
+                  <span class="skill-row-label">Prototyping</span>
+                  <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-value="80"></div>
+                  </div>
+                  <span class="skill-val">80</span>
+                </div>
+                <div class="skill-row">
+                  <span class="skill-row-label">Design Systems</span>
+                  <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-value="75"></div>
+                  </div>
+                  <span class="skill-val">75</span>
+                </div>
+                <div class="skill-row">
+                  <span class="skill-row-label">HTML / CSS</span>
+                  <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-value="85"></div>
+                  </div>
+                  <span class="skill-val">85</span>
+                </div>
+              </div>
+
+              <!-- Vista 2: Etiquetas por categoría (tu vista actual) -->
+              <div class="skill-inventory" id="skillInventory">
                 <div class="skill-category">
                   <div class="skill-category-title">
                     <span class="skill-cat-icon">◈</span>
@@ -918,7 +968,7 @@
               aria-label="Configuración"
             >
               <h2 class="section-title" data-i18n="radio_title">
-                RADIO // HUD SETTINGS
+                SETTINGS // APPEARANCE
               </h2>
               <div class="settings-grid">
                 <!-- Selector de color -->

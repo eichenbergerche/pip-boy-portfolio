@@ -75,7 +75,11 @@ async function bootSequence(i18n) {
 
 /* ── animateSkillBars ── */
 function animateSkillBars() {
-  document.querySelectorAll('.skill-bar-fill').forEach((bar) => {
+  // 1. Asegurarse de que la vista de BARRAS esté visible;
+  document.getElementById('skillBarsView').style.display = 'block';
+
+  // 2. Animar las barras
+  document.querySelectorAll('#skillBarsView .skill-bar-fill').forEach((bar) => {
     setTimeout(() => {
       bar.style.width = bar.dataset.value + '%';
     }, 100);

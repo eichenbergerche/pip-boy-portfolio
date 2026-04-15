@@ -44,7 +44,7 @@
 
   /* Barras de skill: etiqueta más corta */
   .skill-row {
-    grid-template-columns: 90px 1fr 34px;
+    grid-template-columns: 145px 1fr 34px;
   }
 
   /* INV: detalle en columna única */
