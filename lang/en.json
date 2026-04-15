@@ -9,7 +9,7 @@
   "data_title": "DATA // EXPERIENCE",
   "map_title": "MAP // CONTACT",
   "radio_title": "SETTINGS // APPEARANCE",
-  
+
   "skill_cat_ux": "UX / UI DESIGN",
   "skill_cat_web": "WEB DEVELOPMENT",
   "skill_cat_graphic": "GRAPHIC DESIGN",
@@ -26,7 +26,7 @@
   "skill_mentorship": "Mentorship",
   "skill_teamwork": "Teamwork",
   "skill_strategic_planning": "Strategic Planning",
-  
+
   "contact_name": "Name",
   "contact_email": "Email",
   "contact_msg": "Message",
@@ -49,5 +49,43 @@
     "",
     "WELCOME, VAULT DWELLER.",
     "SYSTEM READY. ■"
-  ]
+  ],
+  "display_effects": "DISPLAY EFFECTS",
+
+  "crt_desc": "Turn the CRT screen effects on or off: scanlines, vignette, and phosphor flicker.",
+  "crt_scanline": "CRT SCANLINE EFFECT",
+  "phosphor_glow": "PHOSPHOR GLOW",
+
+  "live_preview": "LIVE PREVIEW",
+  "pipboy_name": "PIP-BOY 3000",
+
+  "exp_1_date": "SEP 2024<br />–<br />NOW",
+  "exp_1_title": "UX Advisor (Klakit Tool)",
+  "exp_1_place": "Klak · Remote",
+  "exp_1_desc": "Creation and maintenance of a modular design system that increases design adjustment speed by 20%. Strategic consulting to improve usability, user experience, and accessibility. Development of customizable themes to expand user personalization and engagement.",
+
+  "exp_2_date": "FEB 2025<br />–<br />SEP 2025",
+  "exp_2_title": "Web Developer",
+  "exp_2_place": "Guau&Cat · Remote",
+  "exp_2_desc": "Development of responsive sites based on Figma prototypes and specifications, ensuring high visual fidelity and excellent UX. Implementation of micro-interactions and interactive functionalities using HTML, CSS, and JavaScript.",
+
+  "exp_3_date": "AUG 2021<br />–<br />JAN 2024",
+  "exp_3_title": "UX/UI Designer and Web Developer",
+  "exp_3_place": "LMV Software Factory · Remote",
+  "exp_3_desc": "Corporate website redesign, achieving 95 points in Google Lighthouse for performance, accessibility, and SEO. Leadership and mentoring of the design team, promoting best practices and agile methodologies. Development of digital portfolios that increased the visibility of main products by 35%.",
+
+  "exp_4_date": "MAR 2021<br />–<br />AUG 2021",
+  "exp_4_title": "Web Developer and UI Designer",
+  "exp_4_place": "Envolvedoras y Servicios SRL · Remote",
+  "exp_4_desc": "Implementation of custom functionalities that increased user interaction by 25%. Site performance optimization, reducing load times by 30%. Management of complete web projects, from planning to delivery.",
+
+  "exp_5_date": "MAR 2020<br />–<br />NOW",
+  "exp_5_title": "Freelance — Developer, Illustrator and Designer",
+  "exp_5_place": "EicheStudio · Remote",
+  "exp_5_desc": "User-centered designs, focusing on wireframing, prototyping, and information architecture. Development of responsive sites using Framer, WordPress, HTML, CSS, and Bootstrap. Custom illustrations and UX/UI consulting to optimize digital experience.",
+
+  "edu_1_date": "MAR 2020<br />–<br />DEC 2022",
+  "edu_1_title": "Higher Technician in Software Development",
+  "edu_1_place": "Instituto de Educación Superior \"Carmen Molina de Llano\" · Corrientes, Argentina",
+  "edu_1_desc": "Higher technical training focused on software development, programming, and web technologies."
 }

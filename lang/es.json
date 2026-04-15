@@ -9,7 +9,7 @@
   "data_title": "DATOS // EXPERIENCIA",
   "map_title": "MAPA // CONTACTO",
   "radio_title": "AJUSTES // APARIENCIA",
-  
+
   "skill_cat_ux": "DISEÑO UX/UI",
   "skill_cat_web": "DESARROLLO WEB",
   "skill_cat_graphic": "DISEÑO GRÁFICO",
@@ -26,7 +26,7 @@
   "skill_mentorship": "Mentoría",
   "skill_teamwork": "Trabajo en Equipo",
   "skill_strategic_planning": "Planificación Estratégica",
-  
+
   "contact_name": "Nombre",
   "contact_email": "Email",
   "contact_msg": "Mensaje",
@@ -49,5 +49,43 @@
     "",
     "BIENVENIDO, VAULT DWELLER.",
     "SISTEMA LISTO. ■"
-  ]
+  ],
+  "display_effects": "EFECTOS DE PANTALLA",
+
+  "crt_desc": "Activa o desactiva los efectos de pantalla CRT: líneas de escaneo, viñeteado y parpadeo de fósforo.",
+  "crt_scanline": "EFECTO DE LÍNEAS DE ESCANEADO CRT",
+  "phosphor_glow": "BRILLO DE FÓSFORO",
+
+  "live_preview": "VISTA PREVIA EN TIEMPO REAL",
+  "pipboy_name": "PIP-BOY 3000",
+
+  "exp_1_date": "SEP 2024<br />–<br />HOY",
+  "exp_1_title": "Asesor UX (Herramienta Klakit)",
+  "exp_1_place": "Klak · Remoto",
+  "exp_1_desc": "Creación y mantenimiento de un sistema de diseño modular que incrementa la velocidad de ajustes de diseño en un 20%. Consultoría estratégica para mejorar usabilidad, experiencia del usuario y accesibilidad. Desarrollo de temas personalizables para ampliar la personalización y el engagement de los usuarios.",
+
+  "exp_2_date": "FEB 2025<br />–<br />SEP 2025",
+  "exp_2_title": "Desarrollador Web",
+  "exp_2_place": "Guau&Cat · Remoto",
+  "exp_2_desc": "Desarrollo de sitios responsivos basados en prototipos y especificaciones de Figma, asegurando alta fidelidad visual y excelente UX. Implementación de microinteracciones y funcionalidades interactivas utilizando HTML, CSS y JavaScript.",
+
+  "exp_3_date": "AGO 2021<br />–<br />ENE 2024",
+  "exp_3_title": "Diseñador UX/UI y Desarrollador Web",
+  "exp_3_place": "LMV Software Factory · Remoto",
+  "exp_3_desc": "Rediseño del sitio corporativo, logrando 95 puntos en Google Lighthouse en rendimiento, accesibilidad y SEO. Liderazgo y mentoría del equipo de diseño, promoviendo mejores prácticas y metodologías ágiles. Desarrollo de portafolios digitales que aumentaron la visibilidad de los principales productos en un 35%.",
+
+  "exp_4_date": "MAR 2021<br />–<br />AGO 2021",
+  "exp_4_title": "Desarrollador Web y Diseñador UI",
+  "exp_4_place": "Envolvedoras y Servicios SRL · Remoto",
+  "exp_4_desc": "Implementación de funcionalidades personalizadas que aumentaron la interacción de usuarios en un 25%. Optimización de la performance del sitio, reduciendo los tiempos de carga en un 30%. Gestión de proyectos web completos, desde la planificación hasta la entrega.",
+
+  "exp_5_date": "MAR 2020<br />–<br />HOY",
+  "exp_5_title": "Freelance — Desarrollador, Ilustrador y Diseñador",
+  "exp_5_place": "EicheStudio · Remoto",
+  "exp_5_desc": "Diseños centrados en el usuario, enfocándome en wireframing, prototipado y arquitectura de la información. Desarrollo de sitios responsivos utilizando Framer, WordPress, HTML, CSS y Bootstrap. Ilustraciones personalizadas y consultoría UX/UI para optimizar la experiencia digital.",
+
+  "edu_1_date": "MAR 2020<br />–<br />DIC 2022",
+  "edu_1_title": "Técnico Superior en Desarrollo de Software",
+  "edu_1_place": "Instituto de Educación Superior \"Carmen Molina de Llano\" · Corrientes, Argentina",
+  "edu_1_desc": "Formación técnica superior con enfoque en desarrollo de software, programación y tecnologías web."
 }
