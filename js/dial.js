@@ -19,7 +19,7 @@
 /* ── Configuración de tabs ──
    El orden del array define el orden de rotación del dial */
 const TABS       = ['stat', 'inv', 'data', 'map', 'radio'];
-const TAB_LABELS = { stat: 'STAT', inv: 'INV', data: 'DATA', map: 'MAP', radio: 'RADIO' };
+const TAB_LABELS = { stat: 'STAT', inv: 'INV', data: 'DATA', map: 'MAP', radio: 'HUD' };
 
 /* ── Estado interno ── */
 let currentTab    = 0;
