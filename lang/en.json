@@ -87,5 +87,34 @@
   "edu_1_date": "MAR 2020<br />–<br />DEC 2022",
   "edu_1_title": "Higher Technician in Software Development",
   "edu_1_place": "Instituto de Educación Superior \"Carmen Molina de Llano\" · Corrientes, Argentina",
-  "edu_1_desc": "Higher technical training focused on software development, programming, and web technologies."
+  "edu_1_desc": "Higher technical training focused on software development, programming, and web technologies.",
+
+  "project_1_name": "Klakit Design System",
+  "project_1_tag": "Design System",
+  "project_1_desc": "Creation and maintenance of a modular design system that increases the speed of design adjustments by 20%. Strategic consulting to improve usability, user experience, and accessibility of the Klakit platform. Development of customizable themes to expand personalization and user engagement.",
+
+  "tech_design_system": "Design System",
+  "tech_ux_consulting": "UX Consulting",
+  "tech_accessibility": "Accessibility",
+
+  "view_platform": "VIEW PLATFORM",
+  "case_study": "CASE STUDY",
+
+  "project_2_name": "LMV Corporate Redesign",
+  "project_2_tag": "Web Development",
+  "project_2_desc": "Complete redesign of the corporate website, achieving 95 points in Google Lighthouse for performance, accessibility, and SEO. Leadership and mentorship of the design team, promoting best practices and agile methodologies. Development of digital portfolios that increased the visibility of key products by 35%.",
+
+  "view_site": "VIEW SITE",
+
+  "project_3_name": "Guau&Cat Responsive Sites",
+  "project_3_tag": "Web Development",
+  "project_3_desc": "Development of responsive websites based on Figma prototypes and specifications, ensuring high visual fidelity and excellent user experience (UX). Implementation of microinteractions and interactive features using HTML, CSS, and JavaScript, focused on usability and performance.",
+
+  "view_project": "VIEW PROJECT",
+
+  "project_4_name": "EicheStudio Freelance Projects",
+  "project_4_tag": "Freelance",
+  "project_4_desc": "User‑centered designs focused on wireframing, prototyping, and information architecture. Development of responsive websites using Framer, WordPress, HTML, CSS, and Bootstrap. Custom illustrations and visual content for campaigns and diverse projects.",
+
+  "view_portfolio": "VIEW PORTFOLIO"
 }

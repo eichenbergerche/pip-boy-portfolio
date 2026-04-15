@@ -87,5 +87,34 @@
   "edu_1_date": "MAR 2020<br />–<br />DIC 2022",
   "edu_1_title": "Técnico Superior en Desarrollo de Software",
   "edu_1_place": "Instituto de Educación Superior \"Carmen Molina de Llano\" · Corrientes, Argentina",
-  "edu_1_desc": "Formación técnica superior con enfoque en desarrollo de software, programación y tecnologías web."
+  "edu_1_desc": "Formación técnica superior con enfoque en desarrollo de software, programación y tecnologías web.",
+
+  "project_1_name": "Sistema de Diseño Klakit",
+  "project_1_tag": "Sistema de Diseño",
+  "project_1_desc": "Creación y mantenimiento de un sistema de diseño modular que incrementa la velocidad de ajustes de diseño en un 20%. Consultoría estratégica para mejorar usabilidad, experiencia del usuario y accesibilidad de la plataforma Klakit. Desarrollo de temas personalizables para ampliar la personalización y el engagement.",
+
+  "tech_design_system": "Sistema de Diseño",
+  "tech_ux_consulting": "Consultoría UX",
+  "tech_accessibility": "Accesibilidad",
+
+  "view_platform": "VER PLATAFORMA",
+  "case_study": "CASE STUDY",
+
+  "project_2_name": "Rediseño Corporativo LMV",
+  "project_2_tag": "Desarrollo Web",
+  "project_2_desc": "Rediseño completo del sitio corporativo, logrando 95 puntos en Google Lighthouse en rendimiento, accesibilidad y SEO. Liderazgo y mentoría del equipo de diseño, promoviendo mejores prácticas y metodologías ágiles. Desarrollo de portafolios digitales que aumentaron la visibilidad de los principales productos en un 35%.",
+
+  "view_site": "VER SITIO",
+
+  "project_3_name": "Sitios Responsivos Guau&Cat",
+  "project_3_tag": "Desarrollo Web",
+  "project_3_desc": "Desarrollo de sitios responsivos basados en prototipos y especificaciones de Figma, asegurando alta fidelidad visual y excelente experiencia de usuario (UX). Implementación de microinteracciones y funcionalidades interactivas utilizando HTML, CSS y JavaScript, centrado en la usabilidad y el rendimiento.",
+
+  "view_project": "VER PROYECTO",
+
+  "project_4_name": "Proyectos Freelance EicheStudio",
+  "project_4_tag": "Freelance",
+  "project_4_desc": "Diseños centrados en el usuario, enfocándome en wireframing, prototipado y arquitectura de la información. Desarrollo de sitios responsivos utilizando Framer, WordPress, HTML, CSS y Bootstrap. Ilustraciones personalizadas y contenidos visuales para campañas y proyectos diversos.",
+
+  "view_portfolio": "VER PORTFOLIO"
 }
